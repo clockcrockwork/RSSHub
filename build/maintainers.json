@@ -732,8 +732,9 @@
   "/binance/launchpool": [
     "zhenlohuang"
   ],
-  "/bing/": [
-    "FHYunCai"
+  "/bing/:routeParams?": [
+    "FHYunCai",
+    "LLLLLFish"
   ],
   "/bing/search/:keyword": [
     "CaoMeiYouRen"
@@ -1429,6 +1430,9 @@
   ],
   "/damai/activity/:city/:category/:subcategory/:keyword?": [
     "hoilc"
+  ],
+  "/dangdang/notice/:type?": [
+    "353325487"
   ],
   "/dapenti/subject/:id": [
     "xyqfer"
@@ -3806,6 +3810,9 @@
   ],
   "/mvm/:category?": [
     "nczitzk"
+  ],
+  "/my-formosa/": [
+    "dzx-dzx"
   ],
   "/mydrivers/cid/:id?": [],
   "/mydrivers/zhibo": [],
