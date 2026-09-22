@@ -1,6 +1,6 @@
 import { Route, ViewType } from '@/types';
 import { parseDate } from '@/utils/parse-date';
-import { threadUrl, profileUrl, extractTokens, getUserId, buildContent } from './utils';
+import { threadUrl, profileUrl, extractTokens, buildContent } from './utils';
 import { JSDOM } from 'jsdom';
 import { JSONPath } from 'jsonpath-plus';
 import ofetch from '@/utils/ofetch';
@@ -35,7 +35,6 @@ Specify options (in the format of query string) in parameter \`routeParams\` to 
 async function handler(ctx) {
     const { user, routeParams } = ctx.req.param();
     const { lsd } = await extractTokens(user);
-    const userId = await getUserId(user);
 
     const params = new URLSearchParams(routeParams);
     const debugJson: any = {
@@ -92,7 +91,6 @@ async function handler(ctx) {
         throw new Error('Failed to fetch thread data');
     }
 
-    debugJson.profileId = userId;
     debugJson.response = { response: threadsData };
 
     const userData: ThreadUser = threadsData[0]?.post?.user || { username: user, profile_pic_url: '' };
