@@ -42,3 +42,21 @@ If your changes are not related to route, please fill in `routes` section with `
 - [ ] `Puppeteer`
 
 ## Note / 说明
+
+## Acceptance criteria and next state
+
+<!-- Decide verifiable acceptance criteria before adding work. Refer to existing criteria/evidence sections instead of maintaining duplicate records. -->
+- Target: head SHA / base branch + SHA / tested merge SHA or tree (when relevant):
+- Criteria and evidence: <!-- Link existing sections or use the table below. -->
+
+| Acceptance criterion | Evidence, target SHA and environment | Result |
+| --- | --- | --- |
+|  |  | UNVERIFIED |
+
+<!-- PASS / FAIL / UNVERIFIED / NOT_REQUIRED (reason required). A skipped, cancelled, NOT_REQUIRED, absent or old-head CI run is not a passing execution of the tests. -->
+- Independent review: <!-- Reviewed head/base, receipt and unresolved findings. Check where existing evidence remains valid; distinguish a receipt from GitHub APPROVED. -->
+- Current state and concrete remaining action: <!-- Action, owner and reason for waiting. For a human decision, identify what to inspect, what to decide and what happens next. -->
+- State after acceptance: <!-- Ready for review / awaiting a named human decision / merge candidate / merge into an authorized parent / close as superseded. -->
+- Integration/publication authority and impact: <!-- Target branch, applicable approval and deployment/publication effects. A merge candidate is not merge authorization. -->
+
+<!-- Reuse valid evidence. When head/base changes, validate the changed diff and integration risks. Once implementation is complete and repository Ready requirements are met, leave Draft with the remaining review/decision stated unless an explicit owner/repository hold requires Draft. Preserve required checks, independent review, branch protections and publication authority. -->
